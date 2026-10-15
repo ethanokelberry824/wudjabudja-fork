@@ -56,6 +56,7 @@
 | **INFRA-02** | Spring Boot Init | George | P0 | 2 | Scaffold API. Add dependencies: Web, JPA, PostgreSQL, Security, Validation, JavaMailSender. |
 | **INFRA-03** | JavaFX Maven Setup | George | P0 | 2 | Configure `pom.xml` for Jackson JSON parsing and Java 11 `HttpClient`. |
 | **INFRA-04** | Global Exception Handler | Lukas | P1 | 3 | `@ControllerAdvice` to catch standard errors (404, 403, 500) and return them as structured JSON. |
+| **INFRA-05** | AI infrastructure | Ethan | P0 | 2 | create google account for project and gemini API key. Start working on possible prompts. Design AI prompting pipeline. |
 
 ### Epic 2: Authentication & User Management
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
