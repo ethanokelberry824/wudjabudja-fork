@@ -16,7 +16,7 @@
 | Team Member | Role | Total Pts | Core Responsibilities |
 | :--- | :--- | :--- | :--- |
 | **Miles** | **UI & Data Architect** | 26 | Database schema design (`schema.sql`), JavaFX Application Shell, and all major frontend UI components (Login, Forms, Dashboards). |
-| **Ethan** | **AI Integrator** | 25 | Gemini prompt engineering, constraint aggregation, Final Itinerary UI, LLM Readiness Tracker, and the secondary "Trip Briefing" LLM engine. |
+| **Ethan** | **AI Integrator** | 27 | Gemini prompt engineering, constraint aggregation, Final Itinerary UI, LLM Readiness Tracker, and the secondary "Trip Briefing" LLM engine. |
 | **George** | **Backend API Plumber** | 26 | Spring Boot REST controllers, automated HTML email dispatch, core API endpoints, and Maven dependency setup. |
 | **Lukas** | **Security & Algorithms** | 26 | Spring Security (JWT, BCrypt), Borda Count vote tallying engine, global API exception routing, and LLM error recovery. |
 
