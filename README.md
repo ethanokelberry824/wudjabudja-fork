@@ -49,7 +49,7 @@
 
 ## 3. Product Backlog (DEEP)
 
-### Epic 1: Infrastructure & Project Scaffolding
+### Sprint 1: Infrastructure & Project Scaffolding
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **INFRA-01** | PostgreSQL Schema | Miles | P0 | 3 | Create `schema.sql`: `users`, `trips`, `trip_participants`, `user_preferences`, `itinerary_options`, `votes`. |
@@ -58,7 +58,7 @@
 | **INFRA-04** | Global Exception Handler | Lukas | P1 | 3 | `@ControllerAdvice` to catch standard errors (404, 403, 500) and return them as structured JSON. |
 | **INFRA-05** | AI infrastructure | Ethan | P0 | 2 | create google account for project and gemini API key. Start working on possible prompts. Design AI prompting pipeline. |
 
-### Epic 2: Authentication & User Management
+### Sprint 2: Authentication & User Management
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **AUTH-01** | Register API | Lukas | P0 | 5 | `POST /api/auth/register`. Hash passwords using BCrypt. Validate email uniqueness. |
@@ -66,7 +66,7 @@
 | **AUTH-03** | JavaFX Auth Manager | Lukas | P0 | 3 | Singleton class to store JWT in memory and attach as `Bearer` header to API calls. |
 | **AUTH-04** | Login/Reg Views | Miles | P0 | 5 | FXML views with client-side validation (passwords match, non-empty fields). |
 
-### Epic 3: Navigation & Trip Setup
+### Sprint 3: Navigation & Trip Setup
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **NAV-01** | Main App Shell | Miles | P0 | 3 | `Main.fxml` with static left Sidebar and dynamic center `StackPane` for view swapping. |
@@ -74,14 +74,14 @@
 | **TRIP-02** | Email Invite Engine | George | P1 | 5 | `POST /api/trips/{id}/invite`. Accepts `List<String>`. Connects to SMTP. Sends HTML email with code. |
 | **TRIP-03** | Join Trip Flow | George | P1 | 3 | `POST /api/trips/join`. Accepts `join_code` and maps user to `trip_participants`. |
 
-### Epic 4: Participant Preferences
+### Sprint 4: Participant Preferences
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **PREF-01** | Save Preferences API | George | P0 | 3 | `POST /api/trips/{id}/preferences`. Upserts budget breakdowns, wake time, experience level, and tags. |
 | **PREF-02** | Preference UI View | Miles | P1 | 5 | FXML view with sliders/checkboxes capturing the new Tier 1 data points (Wake Time, Radius). |
 | **PREF-03** | Readiness Tracker | Ethan | P2 | 2 | API endpoint verifying all invited users submitted preferences before enabling LLM generation. |
 
-### Epic 5: Gemini Flash Itinerary Engine
+### Sprint 5: Gemini Flash Itinerary Engine
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **AI-01** | Constraint Aggregator | Ethan | P0 | 3 | Backend service combining all granular user constraints into a contextual JSON map. |
@@ -89,7 +89,7 @@
 | **AI-03** | JSON Deserialization | Ethan | P0 | 5 | Maps LLM response to Java objects. Saves exactly 3 options per time-block per day to DB. |
 | **AI-04** | Error & Retry Handling | Lukas | P1 | 5 | Catches `JsonParseException` on hallucinated formatting, auto-retries twice before throwing 500. |
 
-### Epic 6: Consensus Voting & Finalization
+### Sprint 6: Consensus Voting & Finalization
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **VOTE-01** | Fetch Candidate Options | George | P1 | 2 | `GET /api/trips/{id}/options`. Returns activities grouped by Day and Time block. |
@@ -98,7 +98,7 @@
 | **FINAL-01** | Final Itinerary UI | Ethan | P1 | 5 | Fetches winning options. Renders chronological timeline of the group's "Perfect Days". Displays Total Cost vs. Group Budget. |
 | **VOTE-04** | Voting Component UI | Miles | P2 | 5 | Drag-and-drop or dropdown UI to allow assigning 1st, 2nd, and 3rd rank points to options. |
 
-### Epic 7: Trip Briefing & Context Expansion
+### Sprint 7: Trip Briefing & Context Expansion
 | ID | Task | Assignee | Priority | Pts | Acceptance Criteria / Technical Details |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **BRIEF-01** | Briefing AI Engine | Ethan | P2 | 5 | Secondary Gemini prompt generating language/customs, packing lists, facts, and tourist season warnings. |
