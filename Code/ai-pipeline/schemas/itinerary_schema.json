@@ -29,8 +29,8 @@
                             "description": { "type": "string" },
                             "category": { "type": "string", "enum": ["food", "outdoors", "culture", "nightlife", "sports", "shopping", "relaxation", "tour"] },
                             "neighborhood": { "type": "string" },
-                            "start_time": { "type": "string", "format": "time" },
-                            "end_time": { "type": "string", "format": "time" },
+                            "start_time": { "type": "string", "description": "24-hour HH:MM" },
+                            "end_time": { "type": "string", "description": "24-hour HH:MM" },
                             "estimated_cost_usd": { "type": "number", "minimum": 0 },
                             "why_it_fits": { "type": "string" }
                           },
